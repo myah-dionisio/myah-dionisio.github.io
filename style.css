@@ -1,1 +1,111 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/* Theme Variables */
+:root {
+  --font-body: 'Arial', sans-serif;
+  --font-heading: 'Consolas';
+  --color-bg: #f9f9f9;
+  --color-primary: #511d12;
+  --color-secondary: #1a1a1a;
+  --color-accent: #6a6363;
+  --color-nav-bg: #efbaca;
+  --spacing-section: 50px;
+}
+
+footer, footer * {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+/* Utility Classes */
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* Navigation */
+nav {
+  background: var(--color-nav-bg);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--color-accent);
+}
+
+nav ul li.active a {
+  color: rgb(55, 55, 52);
+}
+
+/* Sections & Layout */
+.section {
+  padding: var(--spacing-section) 20px;
+  background-color: var(--color-bg);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: var(--color-primary);
+}
 
