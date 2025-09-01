@@ -109,3 +109,27 @@ nav ul li.active a {
   color: var(--color-primary);
 }
 
+/* Contact form styling */
+form label {
+  display: block;         /* puts label on its own line */
+  margin-top: 15px;       /* spacing above each label */
+  font-family: 'Consolas'; /* heading font (full name, email, message) */
+  font-weight: bold;      
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;            
+  max-width: 550px;       
+  margin-top: 5px;
+  padding: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+form button {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}

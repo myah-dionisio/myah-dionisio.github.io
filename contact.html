@@ -9,6 +9,8 @@
         <li><a href="teaching.html">Teaching Practice</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="worksamples.html">Samples</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="resources.html">Resources</a></li>
     </ul>
 </nav>
 
@@ -19,10 +21,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<header></header>
-<h1>Keep in touch</h1> 
-<p>I'd love to hear from you! Whether you have a question about my projects, teaching experience, or just want to connect, please don't hesitate to reach out. You can get in touch through Instagram or via email. I aim to respond as quickly as possible and look forward to connecting with you.</p>
+<h1>Stay in touch</h1> 
+
+<body>
+<p>I'd love to hear from you! Whether you have a question about my projects, teaching experience, or just want to connect, please don't hesitate to reach out by completing the form below.</p>
+
+<!--Adding form (within main and section) -->
+<main>
+    <section class="section">
+        <form id="contact-form" action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Your details</legend>
+
+                <label for ="name">Full Name</label>
+                <input id="Name" name="name" type="text" placeholder="Jane Doe" required minlength="6">
+            
+                <label for ="email">Email Address</label>
+                <input id="email" name="name" type="email" placeholder="name@example.com" required autocomplete="email">
+
+                <label for ="message">Message</label>
+                <textarea id="message" name="message" type="message" placeholder="What is your enquiry?" required minlength="6"></textarea>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2025 Myah Dionisio</p>
 </footer>
+
+</body>
+</html>
