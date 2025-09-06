@@ -19,6 +19,8 @@ img{
 
 footer, footer * {
   font-family: "Courier New", Courier, monospace !important;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Typography */
@@ -143,4 +145,5 @@ form button {
   display: block;
   margin-top: 15px;
   font-weight: bold;
+
 }
