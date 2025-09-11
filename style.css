@@ -108,7 +108,7 @@ nav ul li.active a {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  width: 600px;
+  max-width: 600px;
 }
 
 .project-card img {
@@ -116,17 +116,56 @@ nav ul li.active a {
   border-radius: 8px;
 }
 
-.project-card h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: var(--color-primary);
+/* Table for Experience page */
+.table-container {
+    overflow-x: auto; /* adds horizontal scroll on small screens */
+    margin: 20px 0;
+}
+
+/* Base table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Header row */
+th {
+    background-color: #8f0762;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Data cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+/* Thumbnail */
+.thumbnail {
+    max-width: 100px;       
+    height: auto;
+    margin: 15px;
+    border-radius: 8px;     
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle base shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect: lift off */
+.thumbnail:hover {
+    transform: translateY(-8px); /* moves element up */
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25); /* emphasise shadow */
 }
 
 /* Contact form styling */
 form label {
-  display: block;         /* puts label on its own line */
-  margin-top: 15px;       /* spacing above each label */
-  font-family: 'Consolas'; /* heading font (full name, email, message) */
+  display: block;         
+  margin-top: 15px;      
+  font-family: 'Consolas'; 
   font-weight: bold;      
 }
 
@@ -145,6 +184,4 @@ form button {
   display: block;
   margin-top: 15px;
   font-weight: bold;
-
 }
-
