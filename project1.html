@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myah Dionisio | Teaching Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+  <!--TOP NAVIGATION BAR-->
+  <header class="top-nav">
+    <nav>
+      <ul>
+		<li class="brand">DIONISIO</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="philosophy.html">PHILOSOPHY</a></li>
+        <li class="active"><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--SIDE PANEL-->
+  <header id="header">
+    <div class="inner">
+      <a href="#" class="image avatar">
+        <img src="images/avatar.jpg" alt="Portrait of Myah Dionisio" />
+      </a>
+      <h1>
+        <strong>I'm Myah</strong> — a Design & Technologies teacher<br />
+        that is passionate about creativity and hands-on learning.<br />
+        Explore my teaching philosophy, projects, and journey<br />
+        as an educator and designer through this portfolio.
+      </h1>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <div id="main">
+    <section>
+      <h2>PROJECTS</h2>
+      <p>Timber lamp</p>
+    </section>
+
+      <!-- JAVASCCRIPT FEATURE: Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- ***ADD CSS TO ALIGN CONTENT IN THE MIDDLE NEXT TO SIDE PANEL*** -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/lamp_thumbnail.jpg" style="width:70%">
+          <div class="text" style="font-style: italic">Final product</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/prototype_lamp.jpg" style="width:70%">
+          <div class="text" style="font-style: italic">Experimenting with cardboard cutouts</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/cnc_lampframe.jpg" style="width:70%">
+          <div class="text" style="font-style: italic">Timber cut with precision using the CNC router</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/cad_prototype.jpg" style="width:70%">
+          <div class="text" style="font-style: italic">Digital prototype of the lamp on AutoDesk Fusion360</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/lamp_varnish.jpg" style="width:70%">
+          <div class="text" style="font-style: italic;">Sapele wood: before and after varnish with Scandinavian oil</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div> 
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div> <br/>
+
+    <div style="text-align: center; font-size: small;">
+    <p>It all started with cutting rectangles out of cardboard, having limited competence in woodwork. 
+      As I fiddled with the pieces, slotting them together, I noticed how the forms began to resemble modern 
+      architecture through their clean, geometric structures. I translated my inexperience into the work itself - 
+      letting minimal technique shape the construction process, with only slot joints connecting each and every 
+      component. <br/>
+      The lamp plays on geometry and symmetry, which achieves a sense of cohesion when viewed at multiple angles.
+      Its rich colour and satin-lustre finish conveys luxury and sophistication, with the warm reddish-brown hues 
+      of sapele accompanied by the yellow-orange lighting creating a refined look compared to the casual appearance 
+      of light woods. In addition, the sapele provides a striking contrast against lighter backgrounds enhancing the 
+      overall ambience and elegance of the room. Designed for ease of use with a housing joint connecting the base 
+      and frame, the frame can be effortlessly lifted from the base to replace the lightbulb or displayed 
+      independently as a sculptural accent in your living space.
+    </p>
+    </div>
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  </div>
+</body>
+</html>

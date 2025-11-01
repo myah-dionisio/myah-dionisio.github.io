@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--navigation menu section-->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="teaching.html">Philosophy</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-        <li><a href="resume.html">Experience</a></li>
-    </ul>
-</nav>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myah Dionisio | Teaching Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<h1>Stay in touch</h1> 
+<body class="is-preload">
 
-<body>
-<body style="background-color: rgb(239, 234, 228);"></body>
+  <!--TOP NAVIGATION BAR-->
+  <header class="top-nav">
+    <nav>
+      <ul>
+		<li class="brand">DIONISIO</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="philosophy.html">PHILOSOPHY</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li class="active"><a href="contact.html">CONTACT</a></li>
+        <li><a href="experience.html">EXPERIENCE</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!--Adding form (within main and section) -->
-<main>
-    <div class="flex-container">
-    <div class="project-card">
-        <form id="contact-form" action="https://formsubmit.co/89b374354bf129378b840c9fd1754d89" method="post" autocomplete="on">
-            <fieldset>
-                <legend>Your details</legend>
-                <p>I'd love to hear from you! Whether you have a question about my projects, teaching experience, or just want to connect, please don't hesitate to reach out by completing the form below.</p>
+  <!--SIDE PANEL-->
+  <header id="header">
+    <div class="inner">
+      <a href="#" class="image avatar">
+        <img src="images/avatar.jpg" alt="Portrait of Myah Dionisio" />
+      </a>
+      <h1>
+        <strong>I'm Myah</strong> — a Design & Technologies teacher<br/>
+        that is passionate about creativity and hands-on learning.<br/>
+        Explore my teaching philosophy, projects, and journey<br/>
+        as an educator and designer through this portfolio.
+      </h1>
+    </div>
+  </header>
 
-                <label for ="name">Full Name</label>
-                <input id="Name" name="name" type="text" placeholder="Jane Doe" required minlength="6">
-            
-                <label for ="email">Email Address</label>
-                <input id="email" name="name" type="email" placeholder="name@example.com" required autocomplete="email">
-
-                <label for ="message">Message</label>
-                <textarea id="message" name="message" type="message" placeholder="What is your enquiry?" required minlength="6"></textarea>
-
-                <button type="submit">Send</button>
-            </fieldset>
-        </form>
+  <!-- MAIN CONTENT AREA -->
+  <div id="main">
+    <section>
+      <h2>GET IN TOUCH</h2>
+      <p>Whether you have a question about my projects, teaching experience, or just want to connect, <br/>
+        please don't hesitate to reach out by completing the form below.</p>
     </section>
-</main>
-</div>
-</body>
 
-<footer>
-    <p>&copy; 2025 Myah Dionisio</p>
-</footer>
+	    <!-- <form method="post" action="#"> -->
+      <form id="contact-form" action="https://formsubmit.co/" method="post" autocomplete="on">
+        <fieldset>
+		      <div class="row gtr-uniform gtr-50">
+			    <div class="col-6 col-12-xsmall">
+				    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+			    </div>
+		      <div class="col-6 col-12-xsmall">
+		        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+		      </div>
+		      <div class="col-12">
+  		      <textarea name="demo-message" id="demo-message" placeholder="Enter your message"rows="6"></textarea>
+		      </div>
+        </fieldset>
+      </form>
+
+      <!-- HTML -->
+      <button type="submit" class="btn">Send Message</button>
+      <button type="reset" class="btn">Reset</button>
+
+        <!--buttons
+			  <ul class="actions">
+          <li><input type="submit" value="Send Message" class="primary" /></li>
+				  <li><input type="reset" value="Reset" /></li>
+        </ul> -->
+	   
+    </section>
+  </div>     
+
+      <footer id="footer">
+		    <div class="inner">
+			    <ul class="copyright">
+			      <li>&copy; Myah Dionisio</li><li>Design: <a href="http://html5up.net/strata">HTML5 UP - Strata</a></li>
+			    </ul>
+	      </div>
+	    </footer>
+    
+  <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> 
 
 </body>
 </html>
+
+
+<!-- OPTIONAL: checkboxes for emailed copy and/or verification 
+             <div class="col-6 col-12-small">
+				<input type="checkbox" id="demo-copy" name="demo-copy">
+				<label for="demo-copy">Email me a copy of this message</label>
+					</div>
+			<div class="col-6 col-12-small">
+				<input type="checkbox" id="demo-human" name="demo-human" checked>
+				<label for="demo-human">I am a human and not a robot</label>
+					</div> -->
