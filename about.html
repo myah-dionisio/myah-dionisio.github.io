@@ -47,7 +47,7 @@
         <div class="col-7 col-12-small">
           <h2>ABOUT ME</h2>
           <p>I am deeply passionate about fashion, art, and design. After finishing high school, I completed a 
-          Bachelor of Fashion Design, where I developed strong technical skills in patternmaking and garment construction. 
+          Bachelor of Fashion Design, where I developed strong technical skills in sewing and patternmaking. 
           These experiences have become the foundation of my teaching practice as a Design and Technologies teacher, 
           allowing me to integrate creative and practical processes into the classroom.
           </p>
@@ -107,29 +107,6 @@
 
       </div>
     </section>
-
-    <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
-    }
-    </script>
-
   </div>
 
   <footer id="footer">
@@ -147,6 +124,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> 
+      <script src="assets/js/auto-slideshow.js"></script>
 
 </body>
 </html>
